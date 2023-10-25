@@ -1,0 +1,15 @@
+<app-header #appHeader [class.small-menu]="appHeader.menu">
+</app-header>
+
+<app-sidebar [class.collapsed]="appHeader.menu">
+</app-sidebar>
+
+
+<div class="main-content" [class.main-content-lg]="!appHeader.menu">
+    <div class="content-h">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+
+<app-footer [class.footer]="!appHeader.menu"></app-footer>

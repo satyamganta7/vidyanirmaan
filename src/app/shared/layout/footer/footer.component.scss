@@ -1,0 +1,11 @@
+:host {
+    display: block;
+    padding:0 28px 15px;
+    margin-left: 65px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    &.footer {
+        margin-left: 250px;
+    }
+}

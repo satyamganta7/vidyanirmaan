@@ -1,0 +1,48 @@
+:host {
+    width: 250px;
+    background-color: #fff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 1001;
+    -webkit-box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    .logo-bar {
+        padding: 20px 5px;
+        padding-bottom: 0;
+        text-align: center;
+        display: block;
+
+        .logo-icon {
+            display: none;
+        }
+    }
+
+    &.collapsed {
+        width: 65px;
+        overflow-y: inherit;
+
+        .logo-bar {
+            .logo {
+                display: none;
+            }
+            .logo-icon {
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    :host {
+        &.collapsed {
+            width: 0;
+            left: -52px;
+        }
+    }
+}

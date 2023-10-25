@@ -1,0 +1,27 @@
+:host {
+    .main-content {
+        padding: 28px;
+        margin-top: 50px;
+        margin-left: 65px;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+
+        .content-h {
+            min-height: calc(100vh - 145px);
+        }
+        &.main-content-lg {
+            margin-left: 250px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .main-content {
+        margin-left: 0;
+        padding: 18px;
+        &.main-content-lg {
+            margin-left: 0;
+        }
+    }
+}
