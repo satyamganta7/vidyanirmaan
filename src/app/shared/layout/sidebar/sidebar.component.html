@@ -1,6 +1,60 @@
-<div class="app-side">
-    <a class="logo-bar" href="#">
-        <img src="../../../../assets/logo.png" alt="logo" class="logo">
-        <img src="../../../../assets/logo-icon.png" alt="logo" class="logo-icon">
-    </a>
-</div>
+<ul class="sidebar-menu metismenu" #menubar>
+    <li>
+        <a [routerLink]="['/main/dashboard']" routerLinkActive="active">
+            <i class="nav-img las la-home"></i>
+            <span class="nav-label">Dashboard</span>
+            <span class="nav-label-pop">Dashboard</span>
+        </a>
+    </li>
+    <li>
+        <a routerLink="['']">
+            <i class="nav-img las la-headphones"></i>
+            <span class="nav-label">Enquiries Management</span>
+            <span class="nav-label-pop">Enquiries Management</span>
+        </a>
+    </li>
+    <li>
+        <a routerLink="['']">
+            <i class="nav-img fa-4x las la-user-graduate"></i>
+            <span class="nav-label">Student Profile</span>
+            <span class="nav-label-pop">Student Profile</span>
+        </a>
+    </li>
+    <li>
+        <a routerLink="['']">
+            <i class="nav-img las la-rupee-sign"></i>
+            <span class="nav-label">Fee Details</span>
+            <span class="nav-label-pop">Fee Details</span>
+        </a>
+    </li>
+    <li>
+        <a routerLink="['']">
+            <i class="nav-img las la-book"></i>
+            <span class="nav-label">Attendance</span>
+            <span class="nav-label-pop">Attendance</span>
+        </a>
+    </li>
+    <li>
+        <a routerLink="['']">
+            <i class="nav-img las la-calendar"></i>
+            <span class="nav-label">Examinations</span>
+            <span class="nav-label-pop">Examinations</span>
+        </a>
+    </li>
+    
+    <li class="subnav">
+        <a href="javascript:;" class="has-arrow">
+            <i class="nav-img las la-tools"></i>
+            <span class="nav-label">Settings</span>
+            <span class="nav-label-pop">Settings</span>
+        </a>
+        <a href="javascript:;" class="has-arrow-collapse-show">
+            <i class="nav-img las la-tools"></i>
+            <span class="nav-label-pop">Settings</span>
+        </a>
+        <ul class="nav-2-level">
+            <li><a [routerLink]="['']">Notifications</a></li>
+            <li><a [routerLink]="['']">Contact</a></li>
+        </ul>
+    </li>
+</ul>

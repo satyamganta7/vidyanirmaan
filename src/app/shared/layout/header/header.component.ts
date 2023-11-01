@@ -6,7 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  
-  menu = true;
 
+  menu = true;
+  
+  cars = [
+    { id: 1, name: 'Volvo', value: 'a' },
+    { id: 2, name: 'Saab', value: 'b' },
+    { id: 3, name: 'Opel', value: 'c' },
+    { id: 4, name: 'Audi', value: 'd' },
+  ];
+  selectedCar = 2;
+ 
 }

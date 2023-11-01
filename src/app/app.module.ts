@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     BrowserAnimationsModule,
     TooltipModule.forRoot(),
     ModalModule.forRoot(),
+    NgSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

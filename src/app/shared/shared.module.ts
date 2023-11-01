@@ -8,6 +8,7 @@ import { LayoutComponent } from './layout/layout/layout.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SidebarComponent } from './layout/sidebar/sidebar.component';
     ReactiveFormsModule,
     FormsModule,
     BsDropdownModule.forRoot(),
+    NgSelectModule
   ],
   exports:[
     CommonModule,

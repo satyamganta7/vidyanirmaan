@@ -1,14 +1,14 @@
 :host {
-    margin-left: 250px;
+    // margin-left: 250px;
     display: block;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    padding: 5px 2px 0 5px;
+    padding: 3px;
 
-    width: calc(100% - 250px);
+    width: 100%;
     background-color: #fff;
-    height: 55px;
+    height: 56px;
     position: fixed;
     top: 0;
     left: 0;
@@ -20,13 +20,13 @@
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 
-    &.small-menu {
+    /*&.small-menu {
         margin-left: 65px;
         width: calc(100% - 65px);
         // .ti-menu::before {
         //     content: "\e646";
         // }
-    }
+    }*/
 
     header {
         color: #333;

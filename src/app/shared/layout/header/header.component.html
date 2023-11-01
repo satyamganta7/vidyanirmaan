@@ -1,10 +1,19 @@
 <header>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="menubars" role="button" (click)="menu=!menu">
-                <i class="las la-bars"></i>
-            </a>
             <div class="d-flex">
+                <a class="menubars" role="button" (click)="menu=!menu">
+                    <i class="las la-bars"></i>
+                </a>
+                <img src="../../../../assets/logo.png" alt="logo" class="logo">
+            </div>
+            <div class="d-flex">
+                <div class="me-2">                 
+
+                    <ng-select class="form-control" [items]="cars" bindLabel="name" bindValue="id"
+                        [(ngModel)]="selectedCar">
+                    </ng-select>
+                </div>
                 <div class="logout-profile">
                     <div class="btn-group" dropdown placement="bottom right">
                         <div class="c-drop-btn header-profile" id="button-animated" dropdownToggle type="button">

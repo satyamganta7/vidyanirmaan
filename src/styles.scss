@@ -46,6 +46,7 @@ a:hover {
     --other-primary: #8b49af;
     --other: #f50794;
     --white: #ffffff;
+    --dark: #333333;
     --black: #000000;
 }
 
@@ -345,6 +346,24 @@ textarea {
     }
 }
 
+.scrollbar-container {
+    @include dFlex();
+    .scollbar-width {
+        width: 100%;
+    }
+}
+.collapsed {
+    perfect-scrollbar {
+        overflow: inherit !important;
+
+        .ps {
+            overflow: inherit !important;
+        }
+        .ps__rail-y {
+            display: none;
+        }
+    }
+}
 .modal-content {
     border: 0;
     border-radius: 0;
