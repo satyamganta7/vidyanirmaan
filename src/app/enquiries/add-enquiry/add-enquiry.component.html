@@ -1,0 +1,241 @@
+<div class="page-header">
+    <h1 class="page-title">
+        {{pageTitle}}
+    </h1>
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a [routerLink]="['../../main/dashboard']"><span></span><i class="las la-home"></i></a>
+            </li>
+            <li class="breadcrumb-item">
+                <a [routerLink]="['../enquiry']"><span></span>Enquiry</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+                <span></span>{{pageTitle}}
+            </li>
+        </ul>
+    </nav>
+</div>
+<!-- /PAGE HEADER -->
+
+<form [formGroup]="formItems" (ngSubmit)="onSubmit()">
+    <div class="box-panel">
+        <div class="box-panel-body pb-2">
+            <div class="sub-title">
+                <h4><em class="las la-user-tie"></em>Student Details</h4>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="form-group">
+                        <label>First Name<sup>*</sup></label>
+                        <input type="text" class="form-control" formControlName="studentFirstName" id="studentFirstName"
+                            placeholder="First Name" [class.is-invalid]="forms.studentFirstName.invalid && submitted"
+                            [class.is-valid]="forms.studentFirstName.valid && submitted">
+                        <div class="invalid-feedback" *ngIf="forms.studentFirstName.invalid && submitted">
+                            Please enter student first name
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="form-group">
+                        <label>Last Name<sup>*</sup></label>
+                        <input type="text" class="form-control" formControlName="studentLastName" id="studentLastName"
+                            placeholder="Last Name" [class.is-invalid]="forms.studentLastName.invalid && submitted"
+                            [class.is-valid]="forms.studentLastName.valid && submitted">
+                        <div class="invalid-feedback" *ngIf="forms.studentLastName.invalid && submitted">
+                            Please enter student last name
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="form-group form-date">
+                        <label>DOB<sup>*</sup></label>
+                        <input type="text" class="form-control" formControlName="studentDOB" id="studentDOB"
+                            placeholder="DOB(mm/dd/yyyy)" bsDatepicker [bsConfig]="{ isAnimated: true }"
+                            [class.is-invalid]="forms.studentDOB.invalid && submitted"
+                            [class.is-valid]="forms.studentDOB.valid && submitted">
+                        <div class="invalid-feedback" *ngIf="forms.studentDOB.invalid && submitted">
+                            Please select DOB
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="form-group">
+                        <label>Gender<sup>*</sup></label>
+                        <select class="form-control form-select" formControlName="studentGender" id="studentGender"
+                            [class.is-invalid]="forms.studentGender.invalid && submitted"
+                            [class.is-valid]="forms.studentGender.valid && submitted">
+                            <option value="">Please Select</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                        <div class="invalid-feedback" *ngIf="forms.studentGender.invalid && submitted">
+                            Please select gender
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="form-group">
+                        <label>Admission to Class<sup>*</sup></label>
+                        <select class="form-control form-select" formControlName="admissionClass" id="admissionClass"
+                            [class.is-invalid]="forms.admissionClass.invalid && submitted"
+                            [class.is-valid]="forms.admissionClass.valid && submitted">
+                            <option value="">Please Select</option>
+                            <option value="Current Year">Current Year</option>
+                            <option value="Next Year">Next Year</option>
+                        </select>
+                        <div class="invalid-feedback" *ngIf="forms.admissionClass.invalid && submitted">
+                            Please select admission to class
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="form-group">
+                        <label>How do you know about us<sup>*</sup></label>
+                        <select class="form-control form-select" formControlName="aboutUs" id="aboutUs"
+                            [class.is-invalid]="forms.aboutUs.invalid && submitted"
+                            [class.is-valid]="forms.aboutUs.valid && submitted">
+                            <option value="">Please Select</option>
+                            <option value="Referral">Referral</option>
+                            <option value="Phamplet">Phamplet</option>
+                            <option value="Justdial">Justdial</option>
+                            <option value="News Adv">News Adv</option>
+                            <option value="Facebook">Facebook</option>
+                        </select>
+                        <div class="invalid-feedback" *ngIf="forms.aboutUs.invalid && submitted">
+                            Please select how do you know about us
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box-panel">
+        <div class="box-panel-body pb-2">
+            <div class="sub-title">
+                <h4><em class="las la-user"></em>Parent Details</h4>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="form-group">
+                        <label>First Name<sup>*</sup></label>
+                        <input type="text" class="form-control" formControlName="parentFirstName" id="parentFirstName"
+                            placeholder="First Name" [class.is-invalid]="forms.parentFirstName.invalid && submitted"
+                            [class.is-valid]="forms.parentFirstName.valid && submitted">
+                        <div class="invalid-feedback" *ngIf="forms.parentFirstName.invalid && submitted">
+                            Please enter parent first name
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="form-group">
+                        <label>Last Name<sup>*</sup></label>
+                        <input type="text" class="form-control" formControlName="parentLastName" id="parentLastName"
+                            placeholder="Last Name" [class.is-invalid]="forms.parentLastName.invalid && submitted"
+                            [class.is-valid]="forms.parentLastName.valid && submitted">
+                        <div class="invalid-feedback" *ngIf="forms.parentLastName.invalid && submitted">
+                            Please enter parent last name
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="form-group">
+                        <label>Mobile Number<sup>*</sup></label>
+                        <input type="text" class="form-control" formControlName="mobileNumber" id="mobileNumber"
+                            placeholder="Mobile Number" [class.is-invalid]="forms.mobileNumber.invalid && submitted"
+                            [class.is-valid]="forms.mobileNumber.valid && submitted">
+
+                        <div class="invalid-feedback" *ngIf="forms.mobileNumber.errors && submitted">
+                            <div *ngIf="forms.mobileNumber.errors.required">Please enter Mobile
+                                Number
+                            </div>
+                            <div *ngIf="forms.mobileNumber.errors.pattern">Pelase enter numbers
+                                only</div>
+                            <div *ngIf="forms.mobileNumber.errors.minlength">Pelase enter 10 digits only</div>
+                            <div *ngIf="forms.mobileNumber.errors.maxlength">Do not enter more than 10 digits</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="form-group">
+                        <label>Email ID<sup>*</sup></label>
+                        <input type="text" class="form-control" formControlName="email" id="email" placeholder="Email"
+                            [class.is-invalid]="forms.email.invalid && submitted"
+                            [class.is-valid]="forms.email.valid && submitted">
+                        <div class="invalid-feedback" *ngIf="forms.email.errors && submitted">
+                            <div *ngIf="forms.email.errors.required">Please enter Email</div>
+                            <div *ngIf="forms.email.errors.email">Email must be a valid Email
+                                format</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box-panel">
+        <div class="box-panel-body pb-2">
+            <div class="sub-title">
+                <h4><em class="las la-map"></em>Contact Details</h4>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="form-group">
+                        <label>Address<sup>*</sup></label>
+                        <input type="text" class="form-control" formControlName="address" id="address"
+                            placeholder="House / Flat / Block " [class.is-invalid]="forms.address.invalid && submitted"
+                            [class.is-valid]="forms.address.valid && submitted">
+                        <div class="invalid-feedback" *ngIf="forms.address.invalid && submitted">
+                            Please enter house / flat / block
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="form-group">
+                        <label>Landmark</label>
+                        <input type="text" class="form-control" formControlName="landmark" id="landmark"
+                            placeholder="Landmark">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="form-group">
+                        <label>Area</label>
+                        <ng-select class="select-control" [items]="area" bindLabel="name" bindValue="id"
+                            [(ngModel)]="defaultValue" formControlName="area" placeholder="Select Area">
+                        </ng-select>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="form-group">
+                        <label>City</label>
+                        <ng-select class="select-control" [items]="city" bindLabel="name" bindValue="id"
+                            [(ngModel)]="defaultValue" formControlName="city" placeholder="Select City">
+                        </ng-select>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="form-group">
+                        <label>State</label>
+                        <ng-select class="select-control" [items]="state" bindLabel="name" bindValue="id"
+                            [(ngModel)]="defaultValue" placeholder="Select State" formControlName="city">
+                        </ng-select>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="form-group">
+                        <label>Country</label>
+                        <ng-select class="select-control" [items]="country" bindLabel="name" bindValue="name"
+                            [(ngModel)]="selectedCountry" placeholder="Select Country" formControlName="country">
+                        </ng-select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary me-2" type="submit">
+        <i class="fa fa-check pe-2"></i>Submit
+    </button>
+    <a class="btn btn-danger" [routerLink]="['../enquiry']">
+        <i class="fa fa-close pe-2"></i>Cancel
+    </a>
+</form>

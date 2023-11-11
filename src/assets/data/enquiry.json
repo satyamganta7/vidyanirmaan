@@ -1,0 +1,234 @@
+[
+    {
+        "studentName": "Rajesh",
+        "class": "7",
+        "gender": "Male",
+        "parentName": "Kamalakar",
+        "fatherMobile": "9652544441",
+        "status": 1
+    },
+    {
+        "studentName": "Sneha Mathapati",
+        "class": "6",
+        "gender": "Female",
+        "parentName": "Guman Singh",
+        "fatherMobile": "9848012345",
+        "status": 0
+    },
+    {
+        "studentName": "Shivam Pathania",
+        "class": "2",
+        "gender": "Male",
+        "parentName": "Bhupinder Singh",
+        "fatherMobile": "9848012345",
+        "status": 2
+    },
+    {
+        "studentName": "Khushi",
+        "class": "3",
+        "gender": "Female",
+        "parentName": "Vinod Kumar",
+        "fatherMobile": "9848012345",
+        "status": 1
+    },
+    {
+        "studentName": "Neha Kumar",
+        "class": "5",
+        "gender": "Female",
+        "parentName": "Babu Ram",
+        "fatherMobile": "9848012345",
+        "status": 0
+    },
+    {
+        "studentName": "Aditi Sharma",
+        "class": "9",
+        "gender": "Female",
+        "parentName": "Ashok Kumar",
+        "fatherMobile": "9848012345",
+        "status": 1
+    },
+    {
+        "studentName": "Sakshi Devi",
+        "class": "8",
+        "gender": "Female",
+        "parentName": "Pramod Kumar",
+        "fatherMobile": "9652544441",
+        "status": 0
+    },
+    {
+        "studentName": "Muskan Yadav",
+        "class": "4",
+        "gender": "Male",
+        "parentName": "Rajesh Kumar",
+        "fatherMobile": "9848012345",
+        "status": 1
+    },
+    {
+        "studentName": "Rajesh Reddy",
+        "class": "5",
+        "gender": "Male",
+        "parentName": "Kalyan Reddy",
+        "fatherMobile": "9848012345",
+        "status": 2
+    },
+    {
+        "studentName": "Kiran Kumar",
+        "class": "3",
+        "gender": "Male",
+        "parentName": "Rathan Kumar Varma",
+        "fatherMobile": "9848012345",
+        "status": 1
+    },
+    {
+        "studentName": "Piyush Khera",
+        "class": "4",
+        "gender": "Male",
+        "parentName": "Radha Mohan Tiwari",
+        "fatherMobile": "9652544441",
+        "status": 2
+    },
+    {
+        "studentName": "Suneha",
+        "class": "10",
+        "gender": "Female",
+        "parentName": "Neerpal",
+        "fatherMobile": "9848012345",
+        "status": 0
+    },
+    {
+        "studentName": "Rajesh Kumar",
+        "class": "7",
+        "gender": "Male",
+        "parentName": "Sanjeev Kumar",
+        "fatherMobile": "9652544441",
+        "status": 2
+    },
+    {
+        "studentName": "Geetanjali Devi",
+        "class": "7",
+        "gender": "Female",
+        "parentName": "Gurbachan Singh",
+        "fatherMobile": "9652544441",
+        "status": 1
+    },
+    {
+        "studentName": "Riya Pal Sharma",
+        "class": "5",
+        "gender": "Female",
+        "parentName": "Manoj Sharma",
+        "fatherMobile": "9652544441",
+        "status": 1
+    },
+    {
+        "studentName": "Ranjit Kumar",
+        "class": "5",
+        "gender": "Male",
+        "parentName": "Sravan Kumar",
+        "fatherMobile": "9848012345",
+        "status": 2
+    },
+    {
+        "studentName": "Shivya Raj",
+        "class": "5",
+        "gender": "Female",
+        "parentName": "Ramana Kumar",
+        "fatherMobile": "9848012345",
+        "status": 1
+    },
+    {
+        "studentName": "Lakshita Pal",
+        "class": "4",
+        "gender": "Female",
+        "parentName": "Parmod Kumar",
+        "fatherMobile": "9652544441",
+        "status": 0
+    },
+    {
+        "studentName": "Usha Sree",
+        "class": "5",
+        "gender": "Female",
+        "parentName": "Rajesh Kumar",
+        "fatherMobile": "9848012345",
+        "status": 1
+    },
+    {
+        "studentName": "Piyush Khera",
+        "class": "9",
+        "gender": "Male",
+        "parentName": "Manoj Tiwari",
+        "fatherMobile": "9848012345",
+        "status": 1
+    },
+    {
+        "studentName": "Rajesh Yadav",
+        "class": "4",
+        "gender": "Male",
+        "parentName": "Rajesh Yadav",
+        "fatherMobile": "9848012345",
+        "status": 1
+    },
+    {
+        "studentName": "Palak Pathania ",
+        "class": "4",
+        "gender": "Female",
+        "parentName": "Narender Reddy",
+        "fatherMobile": "9848012345",
+        "status": 1
+    },
+    {
+        "studentName": "Gagan Yadav",
+        "class": "4",
+        "gender": "Male",
+        "parentName": "Lallu Yadav",
+        "fatherMobile": "9848012345",
+        "status": 0
+    },
+    {
+        "studentName": "Sakshi Devi",
+        "class": "7",
+        "gender": "Female",
+        "parentName": "Pramod Kumar",
+        "fatherMobile": "9652544441",
+        "status": 2
+    },
+    {
+        "studentName": "Priyanka Singh",
+        "class": "5",
+        "gender": "Female",
+        "parentName": "Manoj Singh",
+        "fatherMobile": "9848012345",
+        "status": 1
+    },
+    {
+        "studentName": "Joshali",
+        "class": "3",
+        "gender": "Female",
+        "parentName": "Jatinder Singh",
+        "fatherMobile": "9848012345",
+        "status": 1
+    },
+    {
+        "studentName": "Krishna Reddy",
+        "class": "6",
+        "gender": "Female",
+        "parentName": "Devender Reddy",
+        "fatherMobile": "9652544441",
+        "status": 2
+    },
+    {
+        "studentName": "Samriti Singh",
+        "class": "5",
+        "gender": "Female",
+        "parentName": "Manoj Singh",
+        "fatherMobile": "9848012345",
+        "status": 1
+    },
+    {
+        "studentName": "Vasu Marvi",
+        "class": "5",
+        "gender": "Male",
+        "parentName": "Jatinder Marvi",
+        "fatherMobile": "9848012345",
+        "status": 0
+    }
+]

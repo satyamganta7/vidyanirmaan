@@ -287,6 +287,9 @@
 
 @media (max-width: 992px) {
     :host {
+        
+        margin-top: 88px;
+        height: calc(100vh - 88px);
         &.collapsed {
             width: 0;
             left: -52px;

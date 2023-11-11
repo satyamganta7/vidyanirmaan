@@ -1,0 +1,100 @@
+<div class="page-header">
+    <h1 class="page-title">
+        {{pageTitle}}
+    </h1>
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a [routerLink]="['../../main/dashboard']"><span></span><i class="las la-home"></i></a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+                <span></span>{{pageTitle}}
+            </li>
+        </ul>
+    </nav>
+</div>
+<!-- /PAGE HEADER -->
+
+<div class="box-panel">
+    <div class="box-panel-body pb-0">
+        <div class="row mb-2">
+            <div class="col-3">
+                <div class="input-addon left">
+                    <span class="input-icon"><i class="las la-search"></i></span>
+                    <input type="text" class="form-control form-icon" placeholder="Type to filter the name column..."
+                        (keyup)="updateFilter($event)" />
+                </div>
+            </div>
+            <div class="col-9 text-end">
+                <a class="btn btn-primary" [routerLink]="['../add-enquiry']"><i class="fa fa-plus-circle
+                    pe-2"></i>Add New Enquiry</a>
+            </div>
+        </div>
+
+
+        <ngx-datatable #table class="material" [rows]="rows" [columnMode]="ColumnMode.force" [headerHeight]="32"
+            [footerHeight]="45" [rowHeight]="32" [limit]="20" [scrollbarV]="true" [scrollbarH]="true"
+            [style]="'height: calc(100vh - 250px); min-height:300px'">
+
+            <ngx-datatable-column name="Student Name" prop="studentName" [width]="180">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    {{row.studentName}}
+                </ng-template>
+            </ngx-datatable-column>
+
+
+            <ngx-datatable-column name="Class" prop="class" [width]="80">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    {{row.class}}
+                </ng-template>
+            </ngx-datatable-column>
+
+            <ngx-datatable-column name="Gender" prop="gender" [width]="100">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    {{row.gender}}
+                </ng-template>
+            </ngx-datatable-column>
+
+            <ngx-datatable-column name="Parent Name" prop="parentName" [width]="180">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    {{row.parentName}}
+                </ng-template>
+            </ngx-datatable-column>
+
+            <ngx-datatable-column name="Father Mobile Number" prop="fatherMobile" [width]="160">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    {{row.fatherMobile}}
+                </ng-template>
+            </ngx-datatable-column>
+
+            <ngx-datatable-column name="Status" prop="status">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div *ngIf="row.status==0" class="text-danger">
+                        Inactive
+                    </div>
+                    <div *ngIf="row.status==1" class="text-success">
+                        Completed
+                    </div>
+                    <div *ngIf="row.status==2" class="text-warning">
+                        Pending
+                    </div>
+                </ng-template>
+            </ngx-datatable-column>
+
+            <ngx-datatable-column name=" Actions">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <a role="button" class="text-success me-3" tooltip="View Enquiry" placement="top">
+                        <em class="las la-eye"></em>
+                    </a>
+                    <a role="button" class="text-primary me-3" tooltip="Edit Enquiry" placement="top">
+                        <em class="las la-pen"></em>
+                    </a>
+                    <a role="button" class="text-danger" (click)="delete()" tooltip="Delete Enquiry" placement="top">
+                        <em class="las la-trash"></em>
+                    </a>
+                </ng-template>
+            </ngx-datatable-column>
+
+        </ngx-datatable>
+    </div>
+</div>

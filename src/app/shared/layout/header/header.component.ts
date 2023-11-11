@@ -8,13 +8,21 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
 
   menu = true;
-  
-  cars = [
-    { id: 1, name: 'Volvo', value: 'a' },
-    { id: 2, name: 'Saab', value: 'b' },
-    { id: 3, name: 'Opel', value: 'c' },
-    { id: 4, name: 'Audi', value: 'd' },
+
+  academic = [
+    { id: 1, name: '2023-2024', value: '2023-2024' },
+    { id: 1, name: '2022-2023', value: '2022-2023' },
+    { id: 1, name: '2021-2022', value: '2021-2022' },
+    { id: 1, name: '2020-2021', value: '2020-2021' },
   ];
-  selectedCar = 2;
- 
+  selectedAcademic = 1;
+
+  branch = [
+    { id: 1, name: 'Kukatpally', value: 'Kukatpally' },
+    { id: 2, name: 'Himayat Nagar', value: 'Himayat Nagar' },
+    { id: 3, name: 'Chikkadpally', value: 'Chikkadpally' },
+    { id: 4, name: 'Ameerpet', value: 'Ameerpet' },
+  ];
+  selectedBranch = 2;
+
 }
